@@ -20,7 +20,7 @@
     var dx = 2;
     var dy = -2;
     var ballRadius = 10;
-    var color = context.fillStyle = '#0095DD';
+    var color = context.fillStyle = '#00dd00';
     var paddleHeight = 10;
     var paddleWidth = 75;
     var paddleX = (canvas.width-paddleWidth)/2;
@@ -56,7 +56,7 @@
                     bricks[c][r].y = brickY;
                     context.beginPath();
                     context.rect(brickX, brickY, brickWidth, brickHeight);
-                    context.fillStyle = "#0095DD";
+                    context.fillStyle = "#dd0000";
                     context.fill();
                     context.closePath();
                 }
@@ -98,7 +98,7 @@
    function drawBall() {
        context.beginPath();
        context.arc(x, y, ballRadius, 0, Math.PI * 2);
-       //context.fillStyle = '#0095DD';
+       context.fillStyle = '#00dd00';
        context.fill();
        context.closePath();
    }
@@ -106,7 +106,7 @@
    function drawPaddle() {
        context.beginPath();
        context.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
-       context.fillStyle = "#0095DD";
+       context.fillStyle = "#dd0000";
        context.fill();
        context.closePath();
    }
